@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+          <section>
+              <div class="logo">
+                 <img src="img/img.jpg1.png" alt="logo" style="width: 98px;">
+              </div>
+                 <div id="bar"  class="hamburger" onclick="{openMenu()}">
+                      <i class="fa-solid fa-bars"></i>
+                 </div>
+               <div class="navbaarcontainer" >
+                  <ul id="navbar" class="navbar">
+                   <li class="home"><a href="index.html" >home</a>
+                     <ul class="dropi">
+                       <li><a href="">about</a></li>
+                       <li><a href="">services</a></li>
+                       <li><a href="">new arrivals</a></li>
+                       <li><a href="">toys</a></li>
+                     </ul>
+                   </li>
+                   <li><a href="shop.html" class="q2">shop</a></li>
+                   <li><a href="men.html">men</a></li>
+                   <li><a href="women.html">women</a></li>
+                   <li><a href="kid.html">kid</a></li>
+                   <li><a href="home&living.html">home and living</a></li>
+               </ul>
+           </div>
+        </section>
+         <section>
+               <div class="searchbar">
+                   <form action="#" method="get">
+                      <input type="text" placeholder="search for products,brands and more">
+                      <button><i class="fa-solid fa-magnifying-glass search"></i></button>
+                   </form>
+               </div>
+
+         </section>
+       
+           <div class="secondrynav">
+              <div class="pp">
+                 <i class="fa-solid fa-user pr b"></i>
+                 <h4>profile</h4>
+             </div>
+             <div>
+                 <i class="fa-regular fa-heart b"></i>
+                 <a href="wishlist.html" class="q1w">wishlist</a>
+             </div>
+             <div>
+                 <i class="fa-solid fa-bag-shopping b"></i>
+                 <a href="cart.html" class="q1w">cart</a>
+             </div>
+           </div>
+          </header>
+  
+
+
+
+
+
+  
+
+
+<!--slider images-->>
+
+<div class="container">
+  <!-- Full-width images with caption text -->
+  <div class="image-sliderfade fade">
+      <img src="img/img.boat.webp" alt="slider-image1" style="width: 100%">
+  </div>
+
+  <div class="image-sliderfade fade">
+      <img src="img/boat2.webp" alt="slider image2"     style="width: 100%">
+  </div>
+
+  <div class="image-sliderfade fade">
+      <img src="img/boat3.webp"   alt="slider-image3"   style="width: 100%">
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align: center" class="qq">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+
+
+ 
+ <script src="js/website.js"></script>
+ <br>
+ <br>
+    <section id="q221" class="section-p1">
+        <div class="aswq">
+            <img src="img/img.webp" alt="" class="qaz">
+            <h5 id="awq">females</h5>
+        </div>
+        
+        <div class="aswq">
+            <img src="img/986078_091515-cc-happy-kids-img.jpg" alt="" class="qaz">
+            <h5 >kids</h5>
+        </div>
+        
+        <div class="aswq">
+            <img src="img/img321.webp" alt="" class="qaz">
+            <h5>mens</h5>
+        </div>
+        
+        <div class="aswq">
+            <img src="img/img12.jpg" alt="" class="qaz">
+            <h5>assesories</h5>
+        </div>
+        
+        <div class="aswq">
+            <img src="data:image/jpeg;base64,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" alt="" class="qaz">
+            <h5>beuty</h5>
+        </div>
+        <div class="aswq">
+          <img src="img/img.webp" alt="" class="qaz">
+          <h5 id="awq">females</h5>
+      </div>
+    </section>
+
+ <section>
+    <div class="banner" id="po">
+      <span>new prodducts</span>
+      <p>explore the new products</p>
+      <a href="men.html">
+        <button>explore</button>
+      </a>
+    </div>
+ </section>
+
+    <h2 class="ew">summer collection</h2>
+    <section class="product1">
+        <article class="pro-container">
+          <div class="pro">
+            <img src="https://th.bing.com/th/id/OIP.ihZD10cZ8UyWzypew0Ya9AHaJZ?w=202&h=257&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <div class="desc">
+              <span class="cx">Raymond</span>
+              <h5>women shirt</h5>
+              <h4>₹920</h4>
+              <button href="cart.html"> add to cart</button>
+            </div>
+          </div>
+        </article>
+      
+        <!-- Repeat the article element for each product -->
+        <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.ZGMoTJP77pORtkB1NwSq0wHaKp?w=202&h=290&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>levis</span>
+                <h5>women casual shirts</h5>
+                <h4>₹920</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+     
+
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.IgU5DubU6-dRBmU0v0UE4wHaJQ?w=1060&h=1324&rs=1&pid=ImgDetMain" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>Raymond</span>
+                <h5>cotton superfine shirts</h5>
+                <h4>₹899</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.oG76CfDKdDdBR1KS_oiiSgHaHa?w=900&h=900&rs=1&pid=ImgDetMain" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>Raymond</span>
+                <h5>cotton superfine shirts</h5>
+              <h4>₹750</h4>
+              <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.6EZjFS36U4jcy-QnzFY4ZAHaJ4?w=1152&h=1536&rs=1&pid=ImgDetMain" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>Raymond</span>
+                <h5>bag</h5>
+                <h4>₹6000</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1544003484-3cd181d17917.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>mizu</span>
+                <h5>water botter</h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.yqIYnkftRSrQcucSNIXcAQHaHa?w=900&h=900&rs=1&pid=ImgDetMain" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>Raymond</span>
+                <h5> cotton superfine shirts</h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+        </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <h2 class="ep">new arrival</h2>
+<br>
+<br>
+<br>
+<br>
+    <section class="product1">
+     
+      
+        <!-- Repeat the article element for each product -->
+        <article class="pro-container">
+            <div class="pro" id="ip">
+              <img src="img/vit-c.jpg" alt="">
+              <div class="desc">
+                <span>organics</span>
+                <h5>vitamin c serum</h5>
+                <h4>₹900</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/webg1.webp" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>boat</span>
+                <h5>airpoads</h5>
+                <h4>₹900</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/webg2.webp" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>boat</span>
+                <h5>airpoads</h5>
+                <h4>₹850</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/webg3.webp" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>boat</span>
+                <h5>smart watch</h5>
+                <h4>₹1500</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/webg4.webp" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>boat</span>
+                <h5>smart watch</h5>
+                <h4>₹2500</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1544003484-3cd181d17917.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>mizu</span>
+                <h5>water botter</h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1619994403073-2cec844b8e63.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>organic</span>
+                <h5> lavender perfume</h5>
+                <h4>₹300</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1622560480605-d83c853bc5c3.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>organics</span>
+                <h5>school bag </h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://mobilepriceall.com/wp-content/uploads/2022/09/Apple-iPhone-14-Pro-Max-1024x1024.jpg" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>apple</span>
+                <h5>i phone 14 pro</h5>
+                <h4>₹60000</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://th.bing.com/th/id/OIP.6EZjFS36U4jcy-QnzFY4ZAHaJ4?w=1152&h=1536&rs=1&pid=ImgDetMain" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>lv</span>
+                <h5>lv handmade bag</h5>
+                <h4>₹60000</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1544003484-3cd181d17917.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>mizu</span>
+                <h5>water botter</h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+
+           <article class="pro-container">
+            <div class="pro">
+              <img src="img/photo-1544003484-3cd181d17917.avif" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>mizu</span>
+                <h5>water botter</h5>
+                <h4>₹600</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+
+
+
+          <article class="pro-container">
+            <div class="pro">
+              <img src="https://cdn.inksoft.com/images/products/756/products/5000/Irish_Green/front/500.png" alt="canon G10 camera with 5X zoom lens">
+              <div class="desc">
+                <span>organics</span>
+                <h5>cotton tshirt</h5>
+                <h4>₹400</h4>
+                <button href="cart.html" > add to cart</button>
+              </div>
+            </div>
+          </article>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+ <footer id="w2w">
+    <section class="news">
+       <div class="newsletter">
+          <h2>subcribe for email alerts</h2>
+          <h4>sign up for more exciting offers</h4>
+         <div class="emailreg">
+           <form  method="">
+               <input type="text" placeholder="Enter your e-mail" required>
+               <button type="submit"><i class="fa-solid fa-right-to-bracket"></i></button>
+           </form>
+         </div>
+       </div>
+   </section>
+
+
+   <section id="yy">
+       <div class="dropdown">
+         <h3>shop</h3>
+          <div class="aboutus">
+           <a href="">under 500</a>
+           <a href="">under 500</a>
+           <a href="">under 500</a>
+           <a href="">under 500</a>
+         </div>
+       </div>
+
+
+
+
+
+
+
+     <div class="uu">
+        <h3>our company</h3>
+         <div class="aboutus">
+            <a href="">about us</a>
+            <a href="">our research</a>
+            <a href="">our team</a>
+            <a href="">contact us</a>
+         </div>
+     </div>
+
+
+
+       <div class="nn">
+          <h3>our company</h3>
+           <div class="aboutus">
+             <a href="">about us</a>
+             <a href="">our research</a>
+             <a href="">our team</a>
+             <a href="">contact us</a>
+           </div>
+       </div>
+
+
+         <div class="ourcompany">
+           <h3>our company</h3>
+             <div class="aboutus">
+               <a href="">about us</a>
+               <a href="">our research</a>
+               <a href="">our team</a>
+               <a href="">contact us</a>
+             </div>
+         </div>
+   </section>
+ </footer>
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+ <footer>
+   <div>
+     <p> 2023 Company Name. All rights reserved.</p>
+   </div>
+ </footer>
+</body>
+</html>

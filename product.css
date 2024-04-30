@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: border-box;
+  font-family: Roboto, Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Arial, sans-serif;
+  letter-spacing: -0.2px;
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  position: sticky;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  top: 18px;
+}
+
+.pu {
+  margin-left: 706px;
+  margin-top: -680px;
+  position: relative;
+}
+
+.smallimages img {
+  width: 105px;
+  padding: 2px;
+}
+
+.smallimages {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.55;
+  cursor: pointer;
+}
+
+.smallimages :hover {
+  opacity: inherit;
+}
+
+.main-images img {
+  margin-top: 63px;
+  width: 496px;
+  padding: 2px 27px;
+  height: 500px;
+}
+
+.text {
+  font-size: 37px;
+  margin-top: 37px;
+  padding: 0px 20px;
+}
+
+.brand {
+  background-color: lime;
+  width: 88px;
+  font-size: 13px;
+}
+
+.tre {
+  margin-left: 46px;
+}
+
+button {
+  background-color: rgb(255, 191, 0);
+  width: 440px;
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid yellow;
+  margin-left: -17px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+}
+
+.we {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 43px 20px;
+}
+
+.ip {
+  margin-top: 45px;
+  padding: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.sd {
+  width: 79px;
+  margin-top: 10px;
+  height: 29px;
+  border-radius: 5px;
+}
+
+select {
+  width: 84px;
+  padding: 6px;
+  border-radius: 15px;
+}
+
+select:hover {
+  border: 1px solid red;
+}
+
+.highlight {
+  font-weight: 550;
+}
+
+.mm {
+  padding: 20px;
+}
+
+.mm i {
+  color: #39df39;
+}
+
+.review {
+  font-size: 14px;
+}
+
+.price-box {
+  display: flex;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.price-box strike {
+  color: rgb(185, 185, 185);
+}
+
+.rr img {
+  width: 167px;
+}
+
+.rp img {
+  width: 167px;
+  margin-left: 600px;
+  margin-top: -216px;
+}
+
+.ri img {
+  width: 167px;
+  margin-left: 635px;
+  margin-top: -72px;
+}
+
+.iu {
+  margin-top: -266px;
+  padding: 120px 197px;
+}
+
+.oo {
+  padding: 87px 31px;
+}
+
+.il {
+  padding: 70px;
+  margin-top: -185px;
+  margin-left: 135px;
+}
+
+.ip {
+  margin-top: 45px;
+}
+
+li {
+  list-style: none;
+  padding-left: 281px;
+}
+
+.po_ohbhjd {
+  font-size: 30px;
+  padding: 8px;
+}
+
+.itt {
+  margin-top: 10px;
+  font-size: 23px;
+  padding: 11px;
+}
+
+table {
+  padding: 10px;
+}
+
+.yyu {
+  display: none;
+}
+
+.lk {
+  cursor: pointer;
+  width: 120px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 72px;
+  font-size: 17px;
+  font-family: arial;
+  position: relative;
+}
+
+.pq {
+  background-color: grey;
+  margin-top: -20px;
+  width: 136px;
+  margin-left: 175px;
+  padding: 0px;
+}
+
+.oi {
+  width: 56px;
+  background-color: rgb(255, 0, 0);
+  height: 3px;
+  margin-left: -282px;
+}
+
+.oy {
+  width: 56px;
+  background-color: rgb(65, 255, 0);
+  height: 4px;
+  margin-left: -282px;
+}
+
+.iy {
+  margin-left: 73px;
+  margin-top: -55px;
+  font-size: 37px;
+}
+
+.qpt {
+  background-color: rgb(255 252 243);
+  width: 94px;
+  border-radius: 3px;
+  padding: 12px;
+  border: 1px solid #1b1b1b;
+  margin-left: 496px;
+  margin-top: -15px;
+}
+
+.wae {
+  padding: 0px 7px;
+  position: absolute;
+  margin-left: -151px;
+  margin-top: -93px;
+  font-size: 12px;
+}
+
+.te {
+  margin-top: 47px;
+  font-size: 44px;
+}
+
+.rating {
+  margin-top: 44px;
+  font-size: 31px;
+}
+
+.bb {
+  display: flex;
+  margin-left: -147px;
+}
+
+.bb img {
+  width: 119px;
+  margin-top: 111px;
+  margin-left: 63px;
+}
+
+.wq {
+  margin-top: 270px;
+  margin-left: -666px;
+  background-color: greenyellow;
+  border-radius: 35px;
+  width: 33px;
+  padding: 0px 5px;
+  height: 21px;
+}
+
+.rv {
+  margin-top: 305px;
+  margin-left: -33px;
+  width: 716px;
+}
+
+.yb {
+  margin-top: 375px;
+  margin-left: -712px;
+  margin-right: 592px;
+}
+
+/**similar product**/
+
+.pro-container {
+  width: 182px;
+  margin-left: 15px;
+  margin-top: 48px;
+}
+
+.pro img {
+  width: 150px;
+}
+
+.po_1p .qw {
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+.desc {
+  margin-left: 27px;
+}
+
+.qw {
+  margin-top: 282px;
+  margin-left: 17px;
+}
+
+.pyt {
+  width: 116px;
+  height: 37px;
+}
+
+.po_1p {
+  display: flex;
+}
+
+/** header seaction start**/
+
+
+
+
+
+
+@media screen {
+  
+}media

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+    <style>
+      input {
+        padding: 6px 20px 6px 20px;
+      }
+      button {
+        background-color: #07adff;
+        padding: 5px 46px 5px 47px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: 550;
+      }
+      label {
+        margin-left: -139px;
+        font-size: 15px;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>register</h1>
+        <form
+          action="http://localhost:3000/api/v1/users/register"
+          method="post"
+        >
+          <label
+            for="
+                "
+            >fullname</label
+          >
+          <input type="text" name="fullname" />
+          <label
+            for="
+                "
+             style="margin-left: -165px;">Email</label
+          >
+          <input type="email" name="email" />
+          <label
+            for="
+                "
+             style="    margin-left: -122px;">phonenumber</label
+          >
+          <input type="tel" name="phonenumber" />
+          <label
+            for="
+                "
+            >password</label
+          >
+          <input type="password" name="password" />
+          <br />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <span
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+        "
+        >or</span
+      >
+    </div>
+
+    <div>
+      <a
+        href="chekout.html"
+        style="
+          text-decoration: none;
+          margin-top: 19px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+        ><p
+          style="
+            display: flex;
+            justify-content: center;
+            color: rgb(3, 3, 3);
+            border-radius: 8px;
+            font-weight: 550;
+            border: navajowhite;
+          "
+        >
+          Login
+        </p>
+      </a>
+    </div>
+  </body>
+  <script>
+    fetch("http://localhost:3000/api/v1/users/register", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: FormData({
+        email: email,
+        password: password,
+        fullname: fullname,
+        phonenumber: phonenumber,
+      }),
+    });
+  </script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Authentication</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 18px;
+      }
+      a
+       {
+    margin-top: 17px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #0384f6;
+    background-color: greenyellow;
+    padding: 2px 6px 4px 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      }
+      #submit{
+        width: 105%;
+        background-color: greenyellow;
+        padding: 5px;
+        border: 0.5px solid black;
+        margin-top: 18px;
+        text-transform: uppercase;
+      }
+      input {
+        padding: 4px;
+        width: 100%;
+      }
+      label{
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Authentication</h1>
+    <form
+      id="loginForm"
+      action="http://localhost:3000/api/v1/users/login"
+      method="post"
+    >
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br />
+      <button id="submit" type="submit">Login</button>
+
+
+
+    </form>
+    <div id="response"></div>
+    <a href="register.html">register</a>
+    
+  </body>
+  <script>
+
+    const   email = document.getElementById("email") ;  
+    const   password = document.getElementById("password");
+
+    document.getElementById("loginForm");
+    document
+      .getElementById("submit")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        fetch("http://localhost:3000/api/v1/users/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            password: password,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("response").innerText =
+              JSON.stringify(data);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      });
+
+
+
+
+  </script>
+</html>
